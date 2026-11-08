@@ -32,7 +32,7 @@ public class RoadScroll : MonoBehaviour
         foreach (Transform marker in transform)
         {
             Vector3 position = marker.position;
-            position.y -= travelled;
+            position.y -= travelled * 0.9f;
             if (position.y < LowerLimit)
                 position.y += Mathf.Ceil((LowerLimit - position.y) / LoopLength) * LoopLength;
             marker.position = position;
