@@ -5,7 +5,7 @@ public class CoinWallet : MonoBehaviour
 {
     [SerializeField] private TMP_Text coinsText;
 
-    private int coins = 1;
+    private int coins = 0;
 
     public int Balance { get { return coins; } }
 
