@@ -22,7 +22,7 @@ public class CoinPickup : MonoBehaviour
     private void Update()
     {
         Vector3 position = transform.position;
-        position.y -= obstacleTemplate.Speed * Time.deltaTime;
+        position.y -= obstacleTemplate.Speed * 0.9f * Time.deltaTime;
         transform.position = position;
 
         if (position.y < -8f)
