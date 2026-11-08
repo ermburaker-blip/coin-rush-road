@@ -13,7 +13,7 @@ public class ObstacleMovement : MonoBehaviour
         position.y -= speed * Time.deltaTime;
         transform.position = position;
 
-        if (position.y < -6f)
+        if (position.y < -8f)
             Destroy(gameObject);
     }
 
