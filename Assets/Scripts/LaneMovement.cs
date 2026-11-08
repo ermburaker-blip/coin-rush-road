@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class LaneMovement : MonoBehaviour
 {
     private const float LaneWidth = 2f;
-    private const float MoveSpeed = 8f;
+    private const float MoveSpeed = 12f;
     private const float RepeatDelay = 0.02f;
 
     private int lane = 1;
