@@ -76,7 +76,7 @@ public class ObstacleSpawner : MonoBehaviour
             return;
 
         float x = lanePositions[Random.Range(0, lanePositions.Length)];
-        GameObject obstacle = Instantiate(obstaclePrefab, new Vector3(x, 6f, 0f), Quaternion.identity, transform);
+        GameObject obstacle = Instantiate(obstaclePrefab, new Vector3(x, 7f, 0f), Quaternion.identity, transform);
         ObstacleMovement[] movements = obstacle.GetComponentsInChildren<ObstacleMovement>(true);
         if (movements.Length == 0)
             Debug.LogError("ObstacleSpawner: spawned obstacle has no ObstacleMovement component.", obstacle);
