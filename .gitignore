@@ -1,0 +1,19 @@
+# Unity'nin ürettiği yerel klasörler
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Derleme çıktıları
+/[Bb]uild/
+/[Bb]uilds/
+
+# Unity'nin ürettiği IDE dosyaları
+/*.csproj
+/*.sln
+/*.slnx
+/.vs/
+
+# VS Code
+/.vscode/ 
