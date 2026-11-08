@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private GameObject gameOverText;
     [SerializeField] private LaneMovement laneMovement;
 
-    private int health = 3;
+    private int health = 4;
 
     public bool IsDead { get { return health == 0; } }
     public event Action Died;
