@@ -10,7 +10,7 @@ public class ObstacleSpawner : MonoBehaviour
 
     private readonly List<ObstacleMovement> spawnedMovements = new List<ObstacleMovement>();
     private readonly List<GameObject> spawnedObstacles = new List<GameObject>();
-    private float timeUntilSpawn = 3f;
+    private float timeUntilSpawn = 0.75f;
     private bool stopped;
 
     public ObstacleMovement ObstacleTemplate
