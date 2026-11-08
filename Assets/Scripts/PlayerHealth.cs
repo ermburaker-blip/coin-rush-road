@@ -70,6 +70,6 @@ public class PlayerHealth : MonoBehaviour
     private void UpdateHealthText()
     {
         if (healthText != null)
-            healthText.text = "Can: " + health;
+            healthText.text = "HP: " + health;
     }
 }
