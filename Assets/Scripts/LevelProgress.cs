@@ -14,7 +14,7 @@ public class LevelProgress : MonoBehaviour
     [SerializeField] private GameObject continueButton;
     [SerializeField] private GameObject restartButton;
     [SerializeField] private CoinWallet coinWallet;
-    [SerializeField] private float targetDistance = 60f;
+    [SerializeField] private float targetDistance = 100f;
 
     private const int ContinueCost = 6;
     private float distance;
