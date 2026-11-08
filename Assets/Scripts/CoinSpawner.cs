@@ -75,7 +75,7 @@ public class CoinSpawner : MonoBehaviour
             return;
         }
 
-        GameObject coin = Instantiate(coinPrefab, new Vector3(x, 6f, 0f), Quaternion.identity, transform);
+        GameObject coin = Instantiate(coinPrefab, new Vector3(x, 5f, 0f), Quaternion.identity, transform);
         CoinPickup pickup = coin.GetComponent<CoinPickup>();
         pickup.Initialize(template);
         spawnedCoins.RemoveAll(item => item == null);
