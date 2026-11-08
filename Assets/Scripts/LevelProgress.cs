@@ -16,7 +16,7 @@ public class LevelProgress : MonoBehaviour
     [SerializeField] private CoinWallet coinWallet;
     [SerializeField] private float targetDistance = 60f;
 
-    private const int ContinueCost = 5;
+    private const int ContinueCost = 6;
     private float distance;
     private float startPlayerY;
     private bool stopped;
