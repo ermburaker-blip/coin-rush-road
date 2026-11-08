@@ -6,7 +6,7 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private GameObject obstaclePrefab;
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private float[] lanePositions = { -6f, -4f, -2f, 0f, 2f, 4f };
-    [SerializeField] private float spawnInterval = 2f;
+    [SerializeField] private float spawnInterval = 1f;
 
     private readonly List<ObstacleMovement> spawnedMovements = new List<ObstacleMovement>();
     private readonly List<GameObject> spawnedObstacles = new List<GameObject>();
@@ -36,6 +36,11 @@ public class ObstacleSpawner : MonoBehaviour
 
         x = lanePositions[Random.Range(0, lanePositions.Length)];
         return true;
+    }
+
+    private void Awake()
+    {
+        spawnInterval = MainMenuController.GetObstacleInterval();
     }
 
     private void OnEnable()

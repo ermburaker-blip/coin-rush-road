@@ -38,6 +38,7 @@ public class LevelProgress : MonoBehaviour
             return;
         }
 
+        targetDistance = MainMenuController.GetRoadDistance();
         if (targetDistance <= 0f || float.IsNaN(targetDistance) || float.IsInfinity(targetDistance))
         {
             Debug.LogError("LevelProgress: target distance must be positive and finite.", this);
@@ -154,6 +155,11 @@ public class LevelProgress : MonoBehaviour
 
         restarting = true;
         SceneManager.LoadScene(scene.buildIndex);
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     private void UpdateDistanceText()
