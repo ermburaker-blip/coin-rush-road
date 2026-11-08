@@ -25,7 +25,7 @@ public class CoinPickup : MonoBehaviour
         position.y -= obstacleTemplate.Speed * Time.deltaTime;
         transform.position = position;
 
-        if (position.y < -6f)
+        if (position.y < -8f)
             Destroy(gameObject);
     }
 
