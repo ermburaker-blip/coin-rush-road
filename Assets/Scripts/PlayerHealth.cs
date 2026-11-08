@@ -61,7 +61,7 @@ public class PlayerHealth : MonoBehaviour
             return;
         }
 
-        health = 1;
+        health = 2;
         UpdateHealthText();
         if (gameOverText != null)
             gameOverText.SetActive(false);
