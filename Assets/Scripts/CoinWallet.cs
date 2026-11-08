@@ -19,7 +19,7 @@ public class CoinWallet : MonoBehaviour
 
     public void AddCoin()
     {
-        coins++;
+        coins += 2;
         UpdateCoinsText();
     }
 
