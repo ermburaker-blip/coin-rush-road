@@ -7,7 +7,7 @@ public class CoinSpawner : MonoBehaviour
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private ObstacleSpawner obstacleSpawner;
 
-    private const float SpawnInterval = 3f;
+    private const float SpawnInterval = 4f;
     private readonly List<CoinPickup> spawnedCoins = new List<CoinPickup>();
     private readonly List<GameObject> spawnedCoinObjects = new List<GameObject>();
     private float timeUntilSpawn = SpawnInterval;
