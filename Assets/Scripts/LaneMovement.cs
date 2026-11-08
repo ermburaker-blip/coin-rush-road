@@ -88,7 +88,18 @@ public class LaneMovement : MonoBehaviour
             }
         }
     }
+        public void MoveLeft()
+    {
+        if (isActiveAndEnabled)
+            queuedDirection = -1;
+    }
 
+    public void MoveRight()
+    {
+        if (isActiveAndEnabled)
+            queuedDirection = 1;
+    } 
+    
     private void BeginMove(int direction)
     {
         int nextLane = Mathf.Clamp(lane + direction, -2, 3 );
